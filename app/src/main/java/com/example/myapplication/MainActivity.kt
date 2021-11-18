@@ -11,8 +11,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<Button>(R.id.button).setOnClickListener {
-            findViewById<EditText>(R.id.editTextTextMultiLine).text = supernapis@
+            findViewById<EditText>(R.id.editTextTextMultiLine).setText(R.string.supernapis)
         }
-
+        findViewById<Button>(R.id.button2).setOnClickListener {
+            findViewById<EditText>(R.id.editTextTextMultiLine).setText("Jakub \n Drzewiecki")
+        }
     }
 }
